@@ -29,6 +29,12 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+var counter=0;
+app.get('/counter',function(req, res){
+   counter=counter+1;
+   req.send(counter.tostring());
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
