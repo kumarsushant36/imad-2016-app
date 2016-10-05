@@ -17,7 +17,7 @@ button.onclick= function(){
     request.open('GET','http://kumarsushant36.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var nameInput=document.GetElementById("name");
+var nameInput=document.getElementById("name");
 var name=nameInput.value;
 var submit=document.GetElementById("Submit_btn");
 submit.onclick=function(){
@@ -28,7 +28,7 @@ submit.onclick=function(){
     for(var i=0;i<names.length;i++){
         list='<li>' + names[i] + '</li>';
     }
-    var ul=document.GetElementById("namelist");
+    var ul=document.getElementById("namelist");
     ul.innerHTML=list;
     
 };
